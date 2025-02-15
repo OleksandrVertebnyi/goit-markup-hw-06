@@ -502,13 +502,12 @@ background-color: #31d0aa;
   color: rgb(46, 47, 66);
   display: flex;
   justify-content: center;
-   margin-bottom: 8px; 
-
+  margin-top: 8px;
+   margin-bottom: 8px;
   font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
-  letter-spacing: 2%;
   text-align: center;
   color: rgb(46, 47, 66);
   
@@ -529,11 +528,11 @@ background-color: #31d0aa;
 
 /* Our team section */
 .team_section {
-  width: 320px;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: #f4f4fd;
-  margin: 0 auto;
+  
+  
 }
   
  
@@ -708,11 +707,11 @@ background-color: #31d0aa;
 
   
 
+
+
 .our_section {
   /* padding-top: 120px;
   padding-bottom: 120px; */
-  width: 320px;
-  margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -764,20 +763,13 @@ background-color: #31d0aa;
 /* footer */
  .footer_content {
 
-  
-  width: 320px;
-  margin: 0 auto;
-  padding: 96px 15px 96px 15px;
-  background-color: #2e2f42;
-}
- .futer_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  
-  gap: 72px;
+   padding: 96px 15px 96px 15px;
+   background-color: #2e2f42;
  }
+  
+  
+  
+ 
   
  
   
@@ -789,20 +781,23 @@ background-color: #31d0aa;
 .footer_logo_conteiner {
   
      /* mob */
-  width: 264px;
-  height: 112px;
-   margin: 0;
+   
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 72px;
+
   
   
 }
 
+
+
 .footer_icons_container {
-   width: 208px;
-  height: 80px; 
-    
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 72px;
  }
    
 
@@ -819,7 +814,7 @@ background-color: #31d0aa;
   
 .futer_contacts {
      /* mob */
-     width: 288px;
+     
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -859,6 +854,7 @@ background-color: #31d0aa;
   font-size: 18px;
 }
 .footer-text {
+  width: 264px;
   color: #f4f4fd;
   letter-spacing: 0.02em;
   margin-top: 16px;
@@ -932,9 +928,9 @@ background-color: #31d0aa;
   
   
   
-.text_contacts {
-   
-   
+  
+  
+  .text_contacts {
   
   font-weight: 500;
   /* width: 75px;
@@ -969,8 +965,6 @@ background-color: #31d0aa;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  margin-top: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -1323,10 +1317,13 @@ background-color: #31d0aa;
       
      .navigation_studio {
       padding-bottom: 24px;
+      padding-top: 24px;
     } 
     
     
-
+    .navigation {
+      padding: 24px 0 24px;
+    }
 
 
     
@@ -1458,7 +1455,7 @@ background-color: #31d0aa;
 
 .section_advantages {
   margin: 0 auto;
-  width: 768px;
+  
   padding: 96px 0 96px;
 }
   
@@ -1487,13 +1484,11 @@ background-color: #31d0aa;
 
    
    
-     /* Our team   */
-  
-    .team_section {
-      width: 768px;
-    }
-      
-     
+   /* Our team   */
+   
+   
+   
+   
    
   
   
@@ -1507,9 +1502,7 @@ background-color: #31d0aa;
 
 /* Our Portfolio ############## */
 
-.our_section {
-width: 768px;
-}
+
 
 .ul_portfolio {
   column-gap: 24px;
@@ -1527,34 +1520,46 @@ width: 768px;
   
     /* Futer ###################*/
 
-  .footer_content {
+  
+
+    .content_container {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 72px;
+      
+    }
     
-    width: 768px;
-    gap: 24px;
     
-    
-  }
-   .futer_container {
-    width: 100%;
-    justify-content: start;
-    padding-left: 92px;
-    gap: 24px;
-    row-gap: 72px;
-   }
     
    
    .footer_icons_container {
-     justify-content: start; 
+    display: block;
+    margin: 0;
      
-    }
-    
+  }
+     
+     
+     .text_contacts {
+       margin-bottom: 16px; 
+      
+     }
   
-  
     
+    .footer_logo_conteiner {
+    margin: 0;
+    display: block;
+    margin-left: 108px;
+   }  
     
-    
+   .futer_contacts {
+    display: block;
+     margin-left: 108px;
      
     
+   }
+
+    
     
     
 
@@ -1563,9 +1568,9 @@ width: 768px;
 
   
 
-  .futer_contacts  {
+  .label_email {
     
-    width: 453px;
+    width: 264px;
     /* width: 453 px;
     height: 80px;
     justify-content: center;
@@ -1573,27 +1578,29 @@ width: 768px;
     margin-top: 72px;
     padding: 0; */
     
-    justify-content: start;
+    
   }
     
     
+    .p_text_social {
+    /* margin: 0; */
+    }
     
-    
-    
-    
-    
-    
-    
-  
-    .footer_form {
-      gap: 24px;
+      .footer_form {
+        gap: 24px;
+        
+        }
       
+  
+      .footer_button {
+        margin: 0;
       }
     
-
-    .footer_button {
-      margin: 0;
-    }
+    
+    
+    
+    
+    
  
     /* Modal ##################*/
     .backdrop_div {
@@ -1624,20 +1631,26 @@ width: 768px;
    
   
   }
-  
-  
-  
-  
-  
-  
- 
- 
-
- .navi-menu {
- margin: 0;
    
+  
+  
+  .navi-menu {
+  margin: 0;
    
  }
+  
+   .navigation {
+    padding: 24px 0 24px;
+   }
+  
+  .navigation_studio {
+    padding-top: 24px;
+    
+  }
+ 
+
+   
+   
   
 .logo-dark {
   
@@ -1702,7 +1715,7 @@ width: 768px;
   /* Our advantages section */
 
 .section_advantages {
-  width: 1440px;
+
  padding-top: 120px;
  padding-bottom: 120px;
 }
@@ -1719,18 +1732,14 @@ width: 768px;
   font-size: 20px;
   display: flex;
   justify-content: flex-start;
+}
   
- }
  .rectangle-icons {
   width: 264px;
   height: 112px;
-  left: 0;
-  top: 0;
   box-sizing: border-box;
-  
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  
   background-color: #f4f4fd;
   display: flex;
   align-items: center;
@@ -1743,15 +1752,14 @@ width: 768px;
  /* Our team section */
 
    .team_section {
-    width: 1440px;
-    padding-top: 120px;
+     padding-top: 120px;
      padding-bottom: 120px; 
+    }
    
- }
+   
  .team_ul {
   display: block;
   display: flex;
-  
   justify-content: center;
 }
 
@@ -1766,12 +1774,10 @@ width: 768px;
   
   
 /* Our Portfolio */
- 
-  .our_section {
-    width: 1440px;
-  }
- 
-
+   .our_section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+   }
  .ul_portfolio {
   column-gap: 24px;
   row-gap: 40px;
@@ -1783,42 +1789,48 @@ width: 768px;
   }
 
     /* Futer ####################*/
-      .futer_container {
-        
-        gap: 0;
-        padding: 0;
-      }
+      
+    
+    
+    .content_container {
+    flex-wrap: nowrap;  
+    display: flex;
+    align-items: baseline;
+    
+    gap: 0;
+   }  
 
    .footer_content {
-    width: 1440px;
-    padding: 100px 0 100px;
-    /* padding: 0; */
-    margin: 0 auto;
+     padding: 100px 0 100px;
     background-color: #2e2f42;
    }
-   /* .content_container {
-  gap: 0;
-  padding: 100px 156px 100px;
-  display: flex;
-  align-items: baseline;
-}  */
+     
+   .footer_logo_conteiner {
+    margin: 0;
+   }
+
   
   
-.footer_logo_conteiner {
+  .p.footer_text {
+   max-width: 264px;
+   }
   
-  margin-left: 156px;
-  width: 264px;
-  height: 112px;
-}
+  
+ 
  .footer_icons_container {
-  margin-left: 120px;
-  width: 208px;
-  height: 80px;
+  margin: 0 0 0 120px;
+  
 }
 
 .futer_contacts {
- margin-left: 80px;
-}
+  margin-left: auto;
+ }
+  
+  
+ 
+ .text_contacts {
+  margin-bottom: 16px;
+ }
   /* Modal  ##################*/
 
   .backdrop_div {
